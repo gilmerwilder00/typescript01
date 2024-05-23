@@ -82,6 +82,7 @@ if ("cumpleaños" in myself) {
 //  Actividad: Implementando el operador “Is”
 console.log("\nUSO DE 'IS':");
 
+// Forma incorrecta
 // if ( nombre is string) {
 //     console.log("La propiedad 'nombre' está en el objeto persona.");
 //   } else {
@@ -116,7 +117,6 @@ if (esPersona(mascota)) {
 
 
 
-
 // Actividad: Implementando el uso de “Generics” I
 console.log("\nUSO DE GENERICS I:");
 // Arreglo de Personas (personas)
@@ -138,7 +138,7 @@ console.log("Primer elemento de nombres:");
 console.log(primerNombre);
 
 
-// Actividad: Implementando el uso de “Generics” I
+// Actividad: Implementando el uso de “Generics” II
 console.log("\nUSO DE GENERICS II:");
 // Arreglo de Personas (family)
 
@@ -184,7 +184,6 @@ console.log("PORTAFOLIO NUMERICO:")
 console.log(portfolioNumerico.getItems());
 console.log(portfolioNumerico.getFirst()); 
 console.log(portfolioNumerico.sum());   
-
 
 
 console.log("PORTAFOLIO TEXTUAL:")

@@ -75,6 +75,7 @@ else {
 }
 //  Actividad: Implementando el operador “Is”
 console.log("\nUSO DE 'IS':");
+// Forma incorrecta
 // if ( nombre is string) {
 //     console.log("La propiedad 'nombre' está en el objeto persona.");
 //   } else {
@@ -106,7 +107,7 @@ else {
 }
 // Actividad: Implementando el uso de “Generics” I
 console.log("\nUSO DE GENERICS I:");
-// Arreglo de Personas (family)
+// Arreglo de Personas (personas)
 // Arreglo de nombres
 var nombres = ["Gilmer", "Jahaziel", 'Leslie'];
 function obtenerPrimerElemento(array) {
@@ -119,7 +120,7 @@ console.log("Primer elemento de personas:");
 console.log(primeraPersona);
 console.log("Primer elemento de nombres:");
 console.log(primerNombre);
-// Actividad: Implementando el uso de “Generics” I
+// Actividad: Implementando el uso de “Generics” II
 console.log("\nUSO DE GENERICS II:");
 // Arreglo de Personas (family)
 var Portfolio = /** @class */ (function () {
@@ -150,10 +151,10 @@ var Portfolio = /** @class */ (function () {
     };
     return Portfolio;
 }());
-var portfolioNumerico = new Portfolio();
-portfolioNumerico.add(10); //primero
-portfolioNumerico.add(20); //segundo
-portfolioNumerico.add(30); //tercero
+var portfolioNumerico = new Portfolio(); // []
+portfolioNumerico.add(10); //primero [10]
+portfolioNumerico.add(20); //segundo [10, 20]
+portfolioNumerico.add(30); //tercero [10, 20, 30]
 console.log("PORTAFOLIO NUMERICO:");
 // console.log(portfolioNumerico.items);
 console.log(portfolioNumerico.getItems());
@@ -161,9 +162,10 @@ console.log(portfolioNumerico.getFirst());
 console.log(portfolioNumerico.sum());
 console.log("PORTAFOLIO TEXTUAL:");
 var portfolioTextual = new Portfolio();
-portfolioTextual.add("Hola"); //primero
-portfolioTextual.add(" "); // segundo 
-portfolioTextual.add("Mundo"); //tercero
+[];
+portfolioTextual.add("Hola"); //primero  ['Hola']
+portfolioTextual.add(" "); // segundo    ['Hola', ' ']
+portfolioTextual.add("Mundo"); //tercero ['Hola', ' ', 'Mundo']
 // console.log(portfolioNumerico.items);
 console.log(portfolioTextual.getItems());
 console.log(portfolioTextual.getFirst());
